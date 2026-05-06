@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ReelFlix — browse your catalogue by genre, keep a watchlist, and decide faster with search and guided picks."
+    />
+    <title>ReelFlix — Film discovery</title>
+    <link rel="icon" type="image/x-icon" href="images/Popcorn-icon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="page-landing">
+    <nav class="nav-bar reveal">
+      <ul>
+        <li><a href="login.html">Log in</a></li>
+        <li><a href="signup.php">Sign up</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <section class="landing-hero" aria-labelledby="landing-heading">
+      <div class="landing-hero__backdrop" aria-hidden="true">
+        <div class="landing-hero__ken"></div>
+      </div>
+      <div class="landing-hero__scrim" aria-hidden="true"></div>
+      <div class="landing-hero__vignette" aria-hidden="true"></div>
+      <div class="landing-hero__grain" aria-hidden="true"></div>
+
+      <div class="landing-hero__content">
+        <p class="landing-hero__brand reveal r-delay-1" aria-hidden="true">
+          <span class="brand-reel">REEL</span><span class="brand-flix">FLIX</span>
+        </p>
+        <p class="landing-hero__eyebrow reveal r-delay-2">Browse · Shortlist · Decide</p>
+        <h1 id="landing-heading" class="landing-hero__title reveal r-delay-3">Pick a film without the endless scroll.</h1>
+        <p class="landing-hero__subtitle reveal r-delay-4">
+          Search the library, save what matters, and cut through noise when you already know the mood.
+        </p>
+        <p class="landing-hero__lead reveal r-delay-5">
+          ReelFlix is built around your catalogue: genres, ratings, watchlists, and a short quiz when you want a tighter shortlist. No filler. Just the workflow.
+        </p>
+        <div class="landing-hero__cta reveal r-delay-6">
+          <a href="signup.php" class="btn btn-landing-primary">Create an account</a>
+          <a href="login.html" class="btn btn-landing-ghost">Log in</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="landing-section" aria-labelledby="features-heading">
+      <div class="landing-section__intro reveal">
+        <p id="features-heading" class="landing-section__label">Product</p>
+        <h2 class="landing-section__title">Everything you need to choose what to watch next.</h2>
+      </div>
+
+      <div class="features-grid features-grid--landing">
+        <a href="genre.php" class="feature-card feature-card--link reveal">
+          <div class="feature-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <rect x="2.5" y="5" width="19" height="14" rx="1.5" />
+              <path d="M8 5v14M16 5v14M2.5 10h19M2.5 14h19" />
+            </svg>
+          </div>
+          <h3>Genre shelves</h3>
+          <p>Open the library by genre when you know the tone: action through drama to horror and sci-fi.</p>
+          <span class="feature-card__cta">Browse genres →</span>
+        </a>
+        <a href="random.php" class="feature-card feature-card--link reveal">
+          <div class="feature-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 9V5h4M20 15v4h-4M15 5h4v4M9 19H5v-4M16 3L8 21" />
+            </svg>
+          </div>
+          <h3>Random draw</h3>
+          <p>When nothing sticks, pull a rated title at random and commit.</p>
+          <span class="feature-card__cta">Try random →</span>
+        </a>
+        <a href="test.html" class="feature-card feature-card--link reveal">
+          <div class="feature-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M9 12l2 2 4-4" />
+            </svg>
+          </div>
+          <h3>Guided quiz</h3>
+          <p>Four questions, then a swipeable shortlist. Built for when browsing feels slow.</p>
+          <span class="feature-card__cta">Start quiz →</span>
+        </a>
+        <a href="watchlist.php" class="feature-card feature-card--link reveal">
+          <div class="feature-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01" />
+            </svg>
+          </div>
+          <h3>Watchlist &amp; favourites</h3>
+          <p>Save titles and star what you love. Both live on your profile.</p>
+          <span class="feature-card__cta">Open watchlist →</span>
+        </a>
+        <a href="trending.php" class="feature-card feature-card--link reveal">
+          <div class="feature-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+            </svg>
+          </div>
+          <h3>Trending &amp; top rated</h3>
+          <p>See what is moving and what holds the highest scores in the database.</p>
+          <span class="feature-card__cta">View trending →</span>
+        </a>
+        <a href="search.php" class="feature-card feature-card--link reveal">
+          <div class="feature-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <circle cx="10.5" cy="10.5" r="5.5" />
+              <path d="M21 21l-4.3-4.3" />
+            </svg>
+          </div>
+          <h3>Search</h3>
+          <p>Match on title, director, or genre text and jump straight to the result.</p>
+          <span class="feature-card__cta">Search titles →</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="copyright-wrapper reveal">&copy; 2026 ReelFlix. All rights reserved.</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

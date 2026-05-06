@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Log in to ReelFlix and start discovering great movies." />
+    <title>Login - ReelFlix</title>
+    <link rel="icon" type="image/x-icon" href="images/Popcorn-icon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style="display:flex;justify-content:center;align-items:center;min-height:100vh;">
+    <div class="login-container reveal">
+
+      <div class="auth-logo">
+        <h2><span style="color:#e50914;">REEL</span><span style="color:#fff;">FLIX</span></h2>
+        <p style="color:var(--muted);font-size:0.9rem;margin-top:4px;">Welcome back — lights, camera, action!</p>
+      </div>
+
+      <form id="loginForm" action="loginlogic.php" method="POST">
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="your_username" required autocomplete="username" />
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <div class="input-password-wrapper">
+            <input type="password" id="password" name="password" placeholder="••••••••" required autocomplete="current-password" />
+            <button type="button" class="toggle-password" title="Show/hide password">👁</button>
+          </div>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+
+      <p style="text-align:center;margin-top:14px;color:var(--muted);font-size:0.88rem;">
+        Forgot your password? <span style="color:var(--accent);">Contact support.</span>
+      </p>
+      <p id="signupLink" style="text-align:center;margin-top:10px;">
+        Don't have an account? <a href="signup.php">Sign up</a>
+      </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
