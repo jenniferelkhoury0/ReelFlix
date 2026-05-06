@@ -5,7 +5,7 @@ if ($conn->connect_error) die('DB error: ' . $conn->connect_error);
 
 // ── AJAX: fix one movie ───────────────────────────────────────────────────
 if (isset($_POST['fix_id'], $_POST['apikey'])) {
-    $id     = intval($_POST['fix_id']);
+    $id     = intval($_POST['fix_id']);  
     $apikey = trim($_POST['apikey']);
     $row    = $conn->query("SELECT ID,TITLE,RELEASE_YEAR FROM MOVIES WHERE ID=$id")->fetch_assoc();
 
